@@ -5,15 +5,17 @@
  */
 function apply_hreflang_tag() {
 
-	//Get the post meta
-	$hreflang = get_field( 'no_usa_page', get_the_ID() );
-	$page_link = get_permalink( get_the_ID() );
-	$hreflang_link = 'https://www.givensliftingsystems.com/' . get_post(get_the_ID())->post_name . '/';
-
-	//Print the hreflang tags
-	if($hreflang != 1) {
-		echo '<link rel="alternate" hreflang="en-CA" href="' . esc_url( $page_link ) . '" />' . "\n";
-		echo '<link rel="alternate" hreflang="en-US" href="' . esc_url( $hreflang_link ) . '" />' . "\n";
+	if(get_the_ID()) {
+		//Get the post meta
+		$hreflang = get_field( 'no_usa_page', get_the_ID() );
+		$page_link = get_permalink( get_the_ID() );
+		$hreflang_link = 'https://www.givensliftingsystems.com/' . get_post(get_the_ID())->post_name . '/';
+	
+		//Print the hreflang tags
+		if($hreflang != 1) {
+			echo '<link rel="alternate" hreflang="en-CA" href="' . esc_url( $page_link ) . '" />' . "\n";
+			echo '<link rel="alternate" hreflang="en-US" href="' . esc_url( $hreflang_link ) . '" />' . "\n";
+		}	
 	}
 }
 

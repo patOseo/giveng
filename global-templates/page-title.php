@@ -12,7 +12,7 @@ $submenu = get_field('sub_menu');
 					<h1 class="mb-2"><?php the_title(); ?></h1>
 				</div>
 				<?php
-				if ( function_exists('yoast_breadcrumb') ) {
+				if ( function_exists('yoast_breadcrumb') && get_field('hide_menu') != 1 ) {
 				  yoast_breadcrumb( '<p id="breadcrumbs" class="text-center">','</p>' );
 				}
 				?>
