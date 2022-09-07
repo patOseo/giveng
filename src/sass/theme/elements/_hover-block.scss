@@ -1,0 +1,17 @@
+.hover-block {
+	.hover-overlay {
+		opacity: 0;
+		position: absolute;
+		line-height: 1.25;
+		font-size: 14px;
+		color: $light;
+		background: rgba($red, 0.65);
+		transition: .3s;
+	}
+
+	&:hover {
+		.hover-overlay {
+			opacity: 1;
+		}
+	}
+}

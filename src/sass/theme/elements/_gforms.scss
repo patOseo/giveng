@@ -1,0 +1,23 @@
+.gform_body {
+	input, textarea, select {
+		padding-top: .75rem !important;
+		padding-bottom: .75rem !important;
+		border-radius: 6px;
+		border-width: 1px !important;
+		border-color: tint-color($darkgrey, 20%);
+	}
+}
+
+.gform_button {
+	padding: .75rem 2rem;
+	border: 0;
+	border-radius: 6px;
+	background: $red;
+	color: $white;
+	width: 100%;
+	transition: 0.2s;
+
+	&:hover {
+		background: shade-color($red, 10%);
+	}
+}

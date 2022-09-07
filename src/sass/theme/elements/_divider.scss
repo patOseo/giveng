@@ -1,0 +1,20 @@
+.divider {
+	background: $red;
+	max-width: 100px;
+	height: 6px !important;
+	opacity: 1;
+	border-radius: 2px;
+
+	&.left {
+		margin-right: auto !important;
+	}
+
+	&.center {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	&.right {
+		margin-left: auto !important;
+	}
+}

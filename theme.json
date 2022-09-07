@@ -1,0 +1,36 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "red",
+                    "color": "#a0000a",
+                    "name": "Red"
+                },
+                {
+                    "slug": "darkgrey",
+                    "color": "#0e0e0e",
+                    "name": "Dark Grey"
+                },
+                {
+                    "slug": "lightgrey",
+                    "color": "#202020",
+                    "name": "Light Grey"
+                }
+            ],
+            "gradients": [
+                {
+                    "slug": "dark-red-to-red",
+                    "gradient": "linear-gradient(135deg,rgb(162,0,11) 0%,rgb(232,0,15) 100%)",
+                    "name": "Dark Red to Red"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1100px",
+            "wideSize": "1800px"
+        }
+    }
+}

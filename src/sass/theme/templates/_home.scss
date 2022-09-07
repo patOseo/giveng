@@ -1,0 +1,10 @@
+.home {
+	.wp-block-video {
+		video {
+			@include media-breakpoint-down(lg) {
+				height: 200px;
+				object-fit: cover;
+			}
+		}
+	}
+}

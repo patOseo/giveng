@@ -1,0 +1,30 @@
+footer.site-footer {
+	background: $darkest;
+
+	.footer-section {
+		background-image: url('/wp-content/themes/givens/images/footer-bg.jpeg');
+		background-size: cover; 
+		background-repeat: no-repeat;
+		background-position: center;
+		font-size: .85rem;
+	}
+
+	.social-links {
+		.fa {
+			padding: .5rem;
+			border-radius: 20px;
+			background: #191919;
+			color: $white;
+			font-size: 1.25rem;
+			transition: 0.2s;
+
+			&:hover {
+				background: $red;
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid $darkgrey;
+	}
+}

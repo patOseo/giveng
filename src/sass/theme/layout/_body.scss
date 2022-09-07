@@ -1,0 +1,36 @@
+body {
+	-webkit-font-smoothing: antialiased;
+
+	a {
+		text-decoration: none; 
+		transition: 0.2s;
+	}
+
+	.entry-content {
+		line-height: 2;
+
+		p, li {
+			font-size: 14px;
+		}
+
+		ul {
+			padding-left: 1.5rem;
+			list-style-type: none;
+		}
+
+		ul:not(.wp-block-social-links) {
+			li:before {
+    			content: "\f00c";
+    			font-family: "FontAwesome";
+    			margin-right: 1rem;
+			}
+		}
+
+		.wp-block-social-links {
+			padding-left: 0;
+			li {
+				font-size: 20px;
+			}
+		}
+	}
+}

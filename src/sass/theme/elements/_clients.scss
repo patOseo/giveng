@@ -1,0 +1,35 @@
+.section-clients {
+	margin: 2rem 0;
+}
+
+.slick-slider .slick-arrow.slick-prev {
+	&:before {
+		content: "\f104";
+    	font-family: FontAwesome;	
+	}
+}
+
+.slick-slider .slick-arrow.slick-next {
+	&:before {
+		content: "\f105";
+    	font-family: FontAwesome;	
+	}
+}
+
+.slick-slider .slick-arrow {
+	z-index: 9999;
+	
+	&:before {
+		padding: 1rem;
+    	background-color: $red;
+    	transition: .2s;
+    }
+}
+
+.slick-prev {
+	left: -18px !important;
+}
+
+.slick-next {
+	right: 0 !important;
+}
