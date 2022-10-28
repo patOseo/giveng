@@ -11,7 +11,8 @@
 defined( 'ABSPATH' ) || exit;
 
 $bootstrap_version = get_theme_mod( 'understrap_bootstrap_version', 'bootstrap4' );
-$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' );
+$navbar_type       = get_theme_mod( 'understrap_navbar_type', 'collapse' ); 
+$contact = get_field('contact_info_tabs', 'option');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -87,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="contact-info text-end">
 						<p class="d-none d-lg-block mb-0 text-sm"><small>Located in the US? Visit our <a href="https://www.givensliftingsystems.com/" target="_blank">US branch</a>.</small></p>
 						<hr class="d-none d-lg-block my-1">
-						<span class="d-none d-lg-block">Givens Engineering Inc, London, ON</span><!-- <a class="mx-1 linkedin" href="https://www.linkedin.com/company/givens-engineering-inc-/" target="_blank"><i class="fa fa-linkedin"></i></a> --><i class="fa fa-phone mx-1"></i><a href="tel:<?php the_field('phone_number', 'option'); ?>" class="d-block d-lg-inline"><?php the_field('phone_number', 'option'); ?></a><span class="d-none d-lg-inline"> | </span><i class="fa fa-envelope mx-1"></i><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
+						<span class="d-none d-lg-block">Givens Engineering Inc, London, ON</span><!-- <a class="mx-1 linkedin" href="https://www.linkedin.com/company/givens-engineering-inc-/" target="_blank"><i class="fa fa-linkedin"></i></a> --><i class="fa fa-phone mx-1"></i><a href="tel:<?php echo $contact['phone_number']; ?>" class="d-block d-lg-inline"><?php echo $contact['phone_number']; ?></a><span class="d-none d-lg-inline"> | </span><i class="fa fa-envelope mx-1"></i><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a>
 					</div>
 				</div>
 			</div>

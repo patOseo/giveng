@@ -14601,6 +14601,7 @@ body .entry-content .wp-block-social-links li {
   padding-right: 1rem;
   color: #f8f9fa;
   text-align: center;
+  font-size: 0.85rem;
 }
 @media (max-width: 1199.98px) {
   .navbar .navbar-nav .nav-link {
