@@ -94,6 +94,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 
-		<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<?php if(get_field('hide_menu') != 1): ?>
+			<?php get_template_part( 'global-templates/navbar', $navbar_type . '-' . $bootstrap_version ); ?>
+		<?php else: ?>
+			<div class="pb-1 bg-dark"></div>
+		<?php endif; ?>
 
 	</header><!-- #wrapper-navbar end -->
